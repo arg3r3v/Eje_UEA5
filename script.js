@@ -9,4 +9,3 @@ scrollContainer.addEventListener("wheel", (event) => {
   event.preventDefault();
   scrollContainer.scrollLeft += event.deltaY * 2; // Aumenta la velocidad del desplazamiento
 });
-
