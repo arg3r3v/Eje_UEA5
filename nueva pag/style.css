@@ -1,0 +1,8 @@
+/* Imágenes que ocupan toda la pantalla */
+.scrolling-image {
+    flex: 0 0 100vw;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    user-select: none;
+  }
