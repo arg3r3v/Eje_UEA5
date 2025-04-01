@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('/PrimerBucle2/assets/viendo_al_mapa.jpg'); /* Reemplaza con tu imagen */
+    background-image: url('PrimerBucle2/assets/viendo_al_mapa.png'); /* Reemplaza con tu imagen */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
