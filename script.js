@@ -31,3 +31,9 @@ scrollContainer.addEventListener("wheel", (event) => {
     scrollContainer.scrollLeft += event.deltaY * 2; // Aumenta la velocidad del desplazamiento
 });
 
+//trigger warning
+console.log("holaa consola");
+window.alert("TW: Contenido Sensible y puede estar relacionado con el trastorno de estrés postraumático (TEPT)");
+let nombre = "anggg";
+document.getElementById("nombre").innerHTML=nombre;
+

@@ -1,8 +1,37 @@
-/* Imágenes que ocupan toda la pantalla */
-.scrolling-image {
-    flex: 0 0 100vw;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    user-select: none;
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/nueva pag/assets/puerta1.png'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* 100% del alto de la pantalla */
+}
+
+/*link*/
+.contenedor {
+    position: relative;
+    width: 60%;
+    max-width: 800px;
+    margin: auto;
   }
+  
+  .link {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(49, 231, 49);
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .link:hover {
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+  }
+  
