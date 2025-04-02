@@ -33,7 +33,12 @@ scrollContainer.addEventListener("wheel", (event) => {
 
 //trigger warning
 console.log("holaa consola");
-window.alert("TW: Contenido Sensible y puede estar relacionado con el trastorno de estrés postraumático (TEPT)");
+window.alert("TRIGGER WARNING: Contenido Sensible y puede estar relacionado con el trastorno de estrés postraumático (TEPT)");
 let nombre = "anggg";
 document.getElementById("nombre").innerHTML=nombre;
 
+document.addEventListener("click", () => {
+    const audio = document.getElementById("background-audio");
+    audio.muted = false; // Quitar el muteo después de la interacción
+    audio.play();
+}, { once: true });

@@ -94,3 +94,8 @@ body, html {
 #enlace-final img:hover {
   transform: scale(1.5);
 }
+
+/*Audio*/
+audio {
+  display: none; /* Oculta el reproductor de audio */
+}

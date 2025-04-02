@@ -1,1 +1,0 @@
-const introScreen = document.querySelector(".intro-screen");
