@@ -31,14 +31,14 @@ scrollContainer.addEventListener("wheel", (event) => {
     scrollContainer.scrollLeft += event.deltaY * 2; // Aumenta la velocidad del desplazamiento
 });
 
-//trigger warning
-console.log("holaa consola");
-window.alert("TRIGGER WARNING: Contenido Sensible y puede estar relacionado con el trastorno de estrés postraumático (TEPT)");
-let nombre = "anggg";
-document.getElementById("nombre").innerHTML=nombre;
-
 document.addEventListener("click", () => {
     const audio = document.getElementById("background-audio");
     audio.muted = false; // Quitar el muteo después de la interacción
     audio.play();
 }, { once: true });
+
+//trigger warning
+console.log("holaa consola");
+window.alert("TRIGGER WARNING: Contenido Sensible y puede estar relacionado con el trastorno de estrés postraumático (TEPT)");
+let nombre = "anggg";
+document.getElementById("nombre").innerHTML=nombre;

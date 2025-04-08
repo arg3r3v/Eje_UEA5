@@ -41,4 +41,8 @@ video, .image-container {
     50% { opacity: 1; }
     100% { opacity: 0; }
 }
-  
+
+/*Audio*/
+audio {
+  display: none; /* Oculta el reproductor de audio */
+}
