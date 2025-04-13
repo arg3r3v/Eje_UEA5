@@ -41,4 +41,4 @@ document.addEventListener("click", () => {
 console.log("holaa consola");
 window.alert("TRIGGER WARNING: Contenido Sensible y puede estar relacionado con el trastorno de estrés postraumático (TEPT)");
 let nombre = "anggg";
-document.getElementById("nombre").innerHTML=nombre;
+//document.getElementById("nombre").innerHTML=nombre;
