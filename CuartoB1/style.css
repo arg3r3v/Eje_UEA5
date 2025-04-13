@@ -1,0 +1,73 @@
+/* Reset de márgenes y ocultar el scroll vertical */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  /* Contenedor principal */
+  .scrolling-row {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Contenedor de las imágenes */
+  .scrollable {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
+    white-space: nowrap;
+    scrollbar-width: none;
+    cursor: grab;
+  }
+  
+  /* Oculta la barra de desplazamiento en Chrome y Edge */
+  .scrollable::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Imágenes que ocupan toda la pantalla */
+  .scrolling-image {
+    flex: 0 0 100vw;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    user-select: none;
+  }
+  
+  /*Link*/
+  
+  #enlace-final {
+    display: none;
+    position: absolute;
+    bottom: 45%;
+    right: 10px;
+    transform: translateX(-1100%);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  #enlace-final img {
+    width: 80px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    transition: transform 0.3s ease; /* Efecto suave */
+  }
+  
+  /* Efecto de escala cuando pasas el mouse */
+  #enlace-final img:hover {
+    transform: scale(1.5);
+  }
+  
+  /*Audio*/
+  audio {
+    display: none; /* Oculta el reproductor de audio */
+  }
