@@ -76,14 +76,14 @@
             setTimeout(() => { img.style.opacity = "0"; }, delayDisappear); // Desaparece
         }
 
-        fadeInOut("img1", 100, 100, 1000, 5000);  
-        fadeInOut("img2", 500, 300, 3000, 7000);
-        fadeInOut("img3", 900, 500, 5000, 9000);
+        fadeInOut("img1", 100, 100, 500, 2000);  
+        fadeInOut("img2", 500, 300, 1000, 3000);
+        fadeInOut("img3", 900, 500, 1500, 4000);
 
         // Mostrar el enlace después de que la última imagen desaparece (9s + 2s de fade)
         setTimeout(() => {
             document.getElementById("miEnlace").style.display = "inline";
-        }, 11000);  
+        }, 6000);  
 
         document.addEventListener("click", () => {
             const audio = document.getElementById("background-audio");
