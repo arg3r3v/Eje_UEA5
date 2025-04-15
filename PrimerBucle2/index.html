@@ -18,7 +18,7 @@
         }
 
         .imagen {
-            width: 250px;
+            width: 300px;
             opacity: 0;
             transition: opacity 2s ease-in-out;
             position: absolute;
@@ -37,7 +37,7 @@
 
         /* Opcional: Estilos para la imagen del enlace */
         #miEnlace img {
-            width: 150px;
+            width: 250px;
             transition: transform 0.3s;
         }
         #miEnlace img:hover {
@@ -57,13 +57,13 @@
         <source src="assets/audiometro3.mp3" type="audio/mpeg">
     </audio>
 
-    <img id="img1" class="imagen" src="assets/dialogo.png" alt="Imagen 1">
-    <img id="img2" class="imagen" src="assets/dialogo2.png" alt="Imagen 2">
-    <img id="img3" class="imagen" src="assets/dialogo3.png" alt="Imagen 3">
+    <img id="img1" class="imagen" src="assets/d1.png" alt="Imagen 1">
+    <img id="img2" class="imagen" src="assets/d2.png" alt="Imagen 2">
+    <img id="img3" class="imagen" src="assets/d3.png" alt="Imagen 3">
 
      <!-- Enlace convertido en imagen -->
      <a id="miEnlace" href="../PrimerBucle3/index.html">
-        <img src="assets/link.png" alt="Ir al sitio">
+        <img src="assets/linkkk.png" alt="Ir al sitio">
     </a>
 
     <script>
@@ -77,13 +77,13 @@
         }
 
         fadeInOut("img1", 100, 100, 1000, 5000);  
-        fadeInOut("img2", 500, 300, 3000, 7000);
-        fadeInOut("img3", 900, 500, 5000, 9000);
+        fadeInOut("img2", 100, 100, 4000, 8000);
+        fadeInOut("img3", 100, 100, 9000, 13000);
 
         // Mostrar el enlace después de que la última imagen desaparece (9s + 2s de fade)
         setTimeout(() => {
             document.getElementById("miEnlace").style.display = "inline";
-        }, 11000);  
+        }, 13500);  
 
         document.addEventListener("click", () => {
             const audio = document.getElementById("background-audio");
